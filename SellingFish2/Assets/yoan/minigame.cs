@@ -5,10 +5,10 @@ public class minigame : MonoBehaviour
     public RectTransform arrow;
     public float speed = 200f;
     public float barWidth = 400f;
-
+    public AudioSource GotOne;
    
     public RectTransform greenZone;
-
+    public Cast playerCastScript;
     bool IsArrowInGreenZone()
     {
         float arrowX = arrow.anchoredPosition.x;
@@ -35,7 +35,15 @@ public class minigame : MonoBehaviour
         {
             if (IsArrowInGreenZone())
             {
+               
+                    playerCastScript.IncrementFishCount();
+                    Debug.Log("nailed it!");
+                
+
                 Debug.Log("Caught the fish!");
+                GotOne.Play();
+
+                
             }
             else
             {

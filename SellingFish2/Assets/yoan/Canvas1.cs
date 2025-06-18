@@ -1,7 +1,9 @@
 using UnityEngine;
-
-public class AudioSp : MonoBehaviour
+using TMPro;
+public class Canvas1 : MonoBehaviour
 {
+    public TextMeshProUGUI fishCounterText;
+    private int fishCount = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

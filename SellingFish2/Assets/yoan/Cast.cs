@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using TMPro;
 
 public class Cast : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class Cast : MonoBehaviour
     public AudioSource castAudio;
     public AudioSource castAudio2;
     public AudioSource FishBite;
-
+    public TextMeshProUGUI fishCounterText;
+    private int fishCount = 0;
 
 
 
@@ -100,6 +102,10 @@ public class Cast : MonoBehaviour
 
 
     }
-   
 
+    public void IncrementFishCount()
+    {
+        fishCount++;
+        fishCounterText.text = ":" + fishCount;
+    }
 }
