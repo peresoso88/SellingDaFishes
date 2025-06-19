@@ -106,6 +106,6 @@ public class Cast : MonoBehaviour
     public void IncrementFishCount()
     {
         fishCount++;
-        fishCounterText.text = ":" + fishCount;
+        fishCounterText.text = "X " + fishCount;
     }
 }

@@ -35,10 +35,11 @@ public class minigame : MonoBehaviour
         {
             if (IsArrowInGreenZone())
             {
-               
+                if (playerCastScript != null)
+                {
                     playerCastScript.IncrementFishCount();
                     Debug.Log("nailed it!");
-                
+                }
 
                 Debug.Log("Caught the fish!");
                 GotOne.Play();
