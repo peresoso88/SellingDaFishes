@@ -705,7 +705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &262391272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -719,7 +719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrow: {fileID: 581499837}
-  speed: 300
+  speed: 700
   barWidth: 400
   GotOne: {fileID: 716363370}
   greenZone: {fileID: 1653281264}
@@ -4519,7 +4519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tacklePrefab: {fileID: 4108217107127394643, guid: 88ed44d5c1681d548a750836cda15ac6, type: 3}
   castPoint: {fileID: 481876749}
-  castForce: 15
+  castForce: 100
   minigameUI: {fileID: 262391276}
   castAudio: {fileID: 981189268}
   castAudio2: {fileID: 162834992}
