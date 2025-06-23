@@ -7,7 +7,7 @@ public class AudioVoulmeStopper : MonoBehaviour
     public RectTransform minigameUI;
     
     public float mutedVolume = 0f;
-    public float normalVolume = 1f;
+    public float normalVolume = 0.5f;
 
 
     // Volume when inactive
